@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	  <style type="text/css">
+		#container{
+		    position: fixed;	
+		    height: 600px;	
+		    width: 40%;
+	        border-radius: 8%;
+		    border: 4px solid black;
+		    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/3d/f2/c4/3df2c464746fce1735d40a95932a9d74.gif);
+		   background-position: 
+            background-repeat: no-repeat;
+            background-size: 100%;
+            box-shadow: 10px 10px 10px rgba(255, 0, 150, 1);
+            cursor: pointer;
+            margin: 100px 200px 300px 380px;
+            
+            }
+        input[type=button]{
+        	cursor: pointer;
+        	padding: 15px 30px;
+
+        	border-radius: 60%;
+        	position: relative;
+        	display: inline-block;
+        	font-size: 30px;
+        	width: 17%;
+        	margin: 3%;
+        	margin-bottom: 2px;
+        	background: rgba(0, 0, 0, .45);
+        	}
+        input[type=button]:hover{
+        	cursor: pointer;
+        	background: #F09;
+        	box-shadow: 10px 10px 10px rgba(0, 0, 0, .9);
+        }
+        input[type=text]{
+        	cursor: pointer;
+        	height: 50px;
+        	width: 53%;
+        	padding: 15px 32px;
+        	margin-top: 30px;
+        	margin-left: 30px;
+        	border: 2px solid black;
+        	border-radius: 30%;
+        	background: rgba(0, 0, 0, .45);
+            font-size: 40px;
+            }    
+        
+        body{
+            background-image: url(http://st2.depositphotos.com/4393299/7171/v/450/depositphotos_71718931-stock-illustration-doodle-calculator-seamless-pattern-background.jpg);
+            position: fixed;
+        }
+
+	  </style>
+</head>
+<body>
+
+   <div id="container">
+   <form name="display">
+<input type="text" name="result"/>
+<input id="erase" type="button" value="c" onclick="display.result.value = ''" />
+</br>
+
+<input type="button" value="1" onclick="display.result.value += '1'" />
+<input type="button" value="2" onclick="display.result.value += '2'" />
+<input type="button" value="3" onclick="display.result.value += '3'" />
+<input type="button" value="+" onclick="display.result.value += '+'" />
+<br />
+
+<input type="button" value="4" onclick="display.result.value += '4'" />
+<input type="button" value="5" onclick="display.result.value += '5'" />
+<input type="button" value="6" onclick="display.result.value += '6'" />
+<input type="button" value="-" onclick="display.result.value += '-'" />
+<br />
+
+<input type="button" value="7" onclick="display.result.value += '7'" />
+<input type="button" value="8" onclick="display.result.value += '8'" />
+<input type="button" value="9" onclick="display.result.value += '9'" />
+<input type="button" value="X" onclick="display.result.value += '*'" />
+<br />
+
+<input type="button" value="0" onclick="display.result.value += '0'" />
+<input type="button" value="avg" onclick="display.result.value = eval(display.result.value)" />
+<input type="button" value="=" onclick="display.result.value = eval(display.result.value)" />
+<input type="button" value="/" onclick="display.result.value += '/'" />
+<br /> 
+	
+</form>
+</div>
+</center>
+</body>
+</html>
+
